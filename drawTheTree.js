@@ -37,7 +37,8 @@
 	function setup(){
 		createCanvas(600,600);
 		background(0);
-		angle = 20*Math.PI/180;
+// 		angle = 20*Math.PI/180;
+		angle = radians(25);
 		for (var i = 1; i <= 5; i++) {
 			generate();
 		}
