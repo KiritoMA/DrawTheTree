@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas id="canvas" width="600" height="600">></canvas>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+	<script type="text/javascript">
+
+		//L-System	Lindenmayer系统
+//多被用于植物生长过程建模
+//变量：AB
+// 常量：无
+// 公理：A（初始值）
+// 规则：(A->AB),(B->A)
+//给字符实际意义
+//F：按指定长度向前画一条线段
+// +：逆时针旋转给定角度
+// -：顺时针旋转给定角度
+// [：储存当前位置
+// ]：回到上一个位置
+/*! p5.js v0.5.16 October 11, 2017 */
+
+
+	var canvas = document.getElementById("canvas");
+	var context = canvas.getContext("2d");
+		context.clearRect(0,0,500,500);
+		context.fillStyle = "#000" ;
+		context.fillRect(0,0,500,500);
+		context.translate(250,500);
+
+	var sentence = "F";
+	var angle;
+	var len = 5;
+	var wei = 10;
+
+	function generate(){
+		var nextSentence = "";
+		for (var i = 0; i < sentence.length; i++) {
+			var ch = sentence.charAt(i);
+			if (ch == "F") {
+				nextSentence += "FF+[+F-F-F]-[-F+F+F]";
+			} else {
+				nextSentence += ch;
+			}
+		}
+		sentence = nextSentence;
+		return sentence;
+	}
+
+  		function drawTree(){
+            context.beginPath();
+            for (var i = 0; i < sentence.length; i++) {
+            	var ch = sentence.charAt(i);
+            	context.lineWidth = wei;
+            	context.strokeStyle = "#fff";
+
+            	switch (ch) {
+            		case "F": context.moveTo(0,0);context.lineTo(0,-len);context.translate(0,-len);break; 
+            		case "+": context.rotate(angle);break;
+            		case "-": context.rotate(-angle);break;
+            		case "[": push();wei *= 0.4;break;
+            		default: pop();wei /= 0.4; 
+            	}
+            }
+            // context.moveTo(0,0);
+            // context.lineTo(-50,-50);
+            // context.closePath();
+            context.stroke();
+        }
+        // drawTree();
+	for (var i = 0; i < 1; i++) {
+		angle = 20*Math.PI/180;
+		generate();
+		drawTree();
+	}
+
+	</script>
+</body>
+</html>
