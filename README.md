@@ -29,7 +29,7 @@ n = 6 : ABAABABAABAABABAABABA<br>
 n = 7 : ABAABABAABAABABAABABAABAABABAABAAB
 
 > Know more about L-system. [L-system.wiki](https://en.wikipedia.org/wiki/L-system)
-<a href="http://write.blog.csdn.net/postlist" target="_blank">跳到自己博客列表</a
+<a href="http://write.blog.csdn.net/postlist" target="_blank">跳到自己博客列表</a>
 
 ## Let the tree grow
 
