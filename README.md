@@ -28,6 +28,8 @@ n = 5 : ABAABABAABAAB<br>
 n = 6 : ABAABABAABAABABAABABA<br>
 n = 7 : ABAABABAABAABABAABABAABAABABAABAAB
 
+> Konw more about L-system. [L-system.wiki](https://en.wikipedia.org/wiki/L-system)
+
 ## Let the tree grow
 
 > You can draw the tree bigger or smaller by change the Loop times in `setup{}`.
