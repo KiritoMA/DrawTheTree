@@ -1,3 +1,3 @@
 # DrawTheTree
 
-![Image text](https://github.com/YingjieMA/image/blob/master/DrawTheTree/tree-5.png)
+![Image text](https://raw.githubusercontent.com/YingjieMA/image/master/DrawTheTree/tree-5.png)
