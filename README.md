@@ -28,7 +28,8 @@ n = 5 : ABAABABAABAAB<br>
 n = 6 : ABAABABAABAABABAABABA<br>
 n = 7 : ABAABABAABAABABAABABAABAABABAABAAB
 
-> Konw more about L-system. [L-system.wiki](https://en.wikipedia.org/wiki/L-system)
+> Know more about L-system. [L-system.wiki](https://en.wikipedia.org/wiki/L-system)
+<a href="http://write.blog.csdn.net/postlist" target="_blank">跳到自己博客列表</a
 
 ## Let the tree grow
 
