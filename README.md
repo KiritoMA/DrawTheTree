@@ -3,7 +3,7 @@
 ![Image text](https://raw.githubusercontent.com/YingjieMA/image/master/DrawTheTree/tree-5.png)
 > This is the tree you can get.
 
-> You can set the tree bigger or smaller by change the Loop times in `setup{}`.
+> You can draw the tree bigger or smaller by change the Loop times in `setup{}`.
 ```javascript
 	function setup(){
 		createCanvas(600,600);
